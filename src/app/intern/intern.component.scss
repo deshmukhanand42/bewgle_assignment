@@ -1,0 +1,108 @@
+
+            *{
+                margin:0;
+                padding: 0; 
+                font-family: Roboto;
+            }
+           
+            ul{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+            }
+            #productList{
+                display: flex;
+    flex-direction: column;
+    align-items: center;
+
+            }
+            .productHeader{
+                display: flex;
+                padding: 10px;
+    border-bottom: 2px solid #ebeff2;
+            }
+            .productAnalyticsBody{
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .productTitle{
+                font-size: 18px;
+                font-weight: 500;
+            }
+            .productReviewCount{
+                color: #186fe7;
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .lastReviewDate,.productSourceInfo span{
+                font-size: 13px;
+                color: #888888
+            }
+            .productContainer{
+         
+                max-width: 550px;
+            }
+            .productHeading{
+                padding:  10px ;
+            }
+            .productReviewInfo{
+                margin: 5px 0px;
+            }
+            .productReviewInfo span{
+               margin-right: 20px;
+            }
+            .productSourceInfo span{
+                margin: 0px 5px;
+            }
+            
+            .productSourceInfo >span:nth-child(1){
+                margin-left:0px; 
+            }
+            .infoTitle{
+                font-size: 13px;
+                font-weight: 300;
+                color: #888888;
+                text-transform: uppercase;
+                margin: 8px 0px;
+            }
+            .topTopicsList li{
+                display: flex;
+        margin: 10px 0px;
+    justify-content: space-between;
+            }
+            .productTopTopics{
+                width: calc(50% - 10px);
+                padding-right: 10px; 
+            }
+            .productImage{
+                max-width: 105px;
+            }
+            .topicName{
+                font-size: 14px;
+                color: #252424;
+            }
+            .productPrice{
+                font-size: 13px;
+                margin-bottom: 30px;
+           
+            }
+            .productRelatedInfo{
+                width: calc(40% - 10px);
+                font-size: 13px;
+            }
+            .productRelatedInfo li{
+                margin: 5px 0px;
+                color: #504f4f;
+            }
+            .productMoreInfo{
+                display: none;
+            }
+            .showLess{
+                display: none;
+            }
+            .showMore{
+                display: block;
+            }
+    

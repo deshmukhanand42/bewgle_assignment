@@ -1,0 +1,48 @@
+
+  <div id="productList">
+      <div class="productContainer">
+          <div class="productHeader">
+              <div class="productImage">
+                  <figure>
+                      <img src="{{url}}" alt="" />
+                      <!-- <figcaption>dasdasd</figcaption> -->
+                  </figure>
+              </div>
+              <div class="productHeading">
+                      <h4 class="productTitle">{{data['title']}} </h4>
+                      <p class="productSourceInfo"><span>Category: {{data['sourceCategory']}}</span><span>|</span><span>Domain: <a href="amazon.in">amazon.in</a></span></p>
+                      <p class="productReviewInfo"><span class="productReviewCount">{{data['reviewCount']}} reviews</span> <span class="lastReviewDate">Last Review At: 21 Oct, 2018</span></p>
+              </div>
+          </div>
+          <div class="productAnalyticsBody">
+              <div class="productTopTopics">
+                  <p class="infoTitle">
+                  TOP SCORES OUT OF 5
+                  </p>
+                  <ul class="topTopicsList"  *ngFor = "let i of data.topScores">
+                      <li><span class="topicName">{{i.topic}}</span><span class="topicRating">{{i.score}}</span></li>
+                      <!-- <li><span class="topicName">Battery Backup</span><span class="topicRating">4.6</span></li>
+                      <li><span class="topicName">Battery Backup</span><span class="topicRating">4.6</span></li> -->
+                  </ul>
+              </div>
+              <div class="productRelatedInfo"> 
+                 
+                          <p class="infoTitle">
+                                  PRODUCT INFO
+                              </p>
+                             <ul>
+                                  <li><span class="infoTitle">M.R.P:</span> {{data['price']}}</li>
+                                  
+                                          <li><span class="infoTitle">Product id:</span> {{data['product_id']}}</li>
+                                          <li><span class="infoTitle">CREATED AT:</span> {{data['createdAt']| date: 'yyyy-MM-dd'}}</li>
+                               
+                                
+                                
+                             </ul>
+
+              </div>
+          </div>
+      </div>
+      
+  </div>
+      
