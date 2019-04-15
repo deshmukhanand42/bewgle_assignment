@@ -28,6 +28,23 @@
     gtag('config', 'UA-118965717-3');
     // Angular ID
     gtag('config', 'UA-118965717-4');
+
+    document.addEventListener('click',function(e){
+            e=e|| window.event;
+            var target= e.target || e.srcElement;
+            console.log(target.innerHTML )
+            if(target.className=="infoTitle prodInfo" && target.innerHTML==="product info +"){   
+                
+                target.innerHTML="product info -";
+                target.nextElementSibling.classList.toggle("opacityNone");
+            }
+            else if(target.className=="infoTitle prodInfo" && target.innerHTML==="product info -"){
+                target.innerHTML="product info +";
+                target.nextElementSibling.classList.toggle("opacityNone");
+            }
+            // console.log(target.className)
+            
+        },false)
   </script>
 </head>
 <body class="app">

@@ -1,10 +1,8 @@
-
-            *{
+ *{
                 margin:0;
                 padding: 0; 
                 font-family: Roboto;
             }
-           
             ul{
                 list-style: none;
             }
@@ -14,11 +12,14 @@
             #productList{
                 display: flex;
     flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    background: #ababab;
     align-items: center;
 
             }
             .productHeader{
-                display: flex;
+              
                 padding: 10px;
     border-bottom: 2px solid #ebeff2;
             }
@@ -33,7 +34,7 @@
             }
             .productReviewCount{
                 color: #186fe7;
-                font-size: 14px;
+                font-size: 15px;
                 font-weight: 600;
             }
             .lastReviewDate,.productSourceInfo span{
@@ -43,9 +44,14 @@
             .productContainer{
          
                 max-width: 550px;
-            }
+    background: white;
+    padding: 10px;
+    margin: 15px 0px;
+}
+            
             .productHeading{
-                padding:  10px ;
+              
+                display: flex;
             }
             .productReviewInfo{
                 margin: 5px 0px;
@@ -69,12 +75,14 @@
             }
             .topTopicsList li{
                 display: flex;
-        margin: 10px 0px;
+    
     justify-content: space-between;
+    border-bottom: 1px solid #f1efef;
+    padding: 7.5px 1px;
             }
             .productTopTopics{
-                width: calc(50% - 10px);
-                padding-right: 10px; 
+                width: calc(90% - 50px);
+                padding-right: 50px; 
             }
             .productImage{
                 max-width: 105px;
@@ -93,8 +101,9 @@
                 font-size: 13px;
             }
             .productRelatedInfo li{
-                margin: 5px 0px;
+                margin: 10px 0px;
                 color: #504f4f;
+
             }
             .productMoreInfo{
                 display: none;
@@ -105,4 +114,38 @@
             .showMore{
                 display: block;
             }
-    
+            .topicRating{
+                
+    padding: 8px;
+    color: #1b1b1b;
+    font-weight: bold;
+    border-radius: 5px;
+            }
+            .bgGreen{
+                color: #0bbd0b;
+            }
+            .bgRed{
+                color: #f36161;
+            }
+            .topicName{
+                font-size: 14px;
+    color: #191818;
+    display: flex;
+   
+    align-items: center;
+            }
+            .opacityNone{
+                opacity: 0;
+            }
+            .prodInfo{
+                cursor: pointer;
+            }
+            .productSourceInfo a{
+                color: #5393f7;
+            }
+            .productTitleInfo{
+                display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 15px;
+}

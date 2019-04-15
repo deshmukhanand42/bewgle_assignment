@@ -2,16 +2,19 @@
   <div id="productList">
       <div class="productContainer">
           <div class="productHeader">
-              <div class="productImage">
+             
+              <div class="productHeading">
+                 <div class="productImage">
                   <figure>
                       <img src="{{url}}" alt="" />
                       <!-- <figcaption>dasdasd</figcaption> -->
                   </figure>
               </div>
-              <div class="productHeading">
+              <div class="productTitleInfo">
                       <h4 class="productTitle">{{data['title']}} </h4>
-                      <p class="productSourceInfo"><span>Category: {{data['sourceCategory']}}</span><span>|</span><span>Domain: <a href="amazon.in">amazon.in</a></span></p>
+                      <p class="productSourceInfo"><span>Category: {{data['sourceCategory']}}</span><span>|</span><span>Domain: <a target="_blank"href="https://amazon.in">amazon.in</a></span></p>
                       <p class="productReviewInfo"><span class="productReviewCount">{{data['reviewCount']}} reviews</span> <span class="lastReviewDate">Last Review At: 21 Oct, 2018</span></p>
+                      </div>
               </div>
           </div>
           <div class="productAnalyticsBody">
@@ -20,17 +23,16 @@
                   TOP SCORES OUT OF 5
                   </p>
                   <ul class="topTopicsList"  *ngFor = "let i of data.topScores">
-                      <li><span class="topicName">{{i.topic}}</span><span class="topicRating">{{i.score}}</span></li>
+                      <li><span class="topicName">{{i.topic}}</span>
+                        <span class="topicRating">{{i.score}}</span></li>
                       <!-- <li><span class="topicName">Battery Backup</span><span class="topicRating">4.6</span></li>
                       <li><span class="topicName">Battery Backup</span><span class="topicRating">4.6</span></li> -->
                   </ul>
               </div>
               <div class="productRelatedInfo"> 
                  
-                          <p class="infoTitle">
-                                  PRODUCT INFO
-                              </p>
-                             <ul>
+                          <p class="infoTitle prodInfo">product info +</p>
+                             <ul class="opacityNone">
                                   <li><span class="infoTitle">M.R.P:</span> {{data['price']}}</li>
                                   
                                           <li><span class="infoTitle">Product id:</span> {{data['product_id']}}</li>
@@ -45,4 +47,7 @@
       </div>
       
   </div>
+   <script>
+        
+        </script>
       

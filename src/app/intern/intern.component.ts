@@ -43,9 +43,14 @@ export class InternComponent implements OnInit {
 };
 
   ngOnInit() {
-    this.keys = Object.keys(this.data);
-    this.values = Object.values(this.data);
-    this.url = this.data.imageUrl;
+
+    let data = this.dataserviceService.getData();
+    
+    this.keys = Object.keys(data);
+    this.values = Object.values(data);
+    this.url = data.imageUrl;
+    this.data = data;
+    console.log(data);
   }
 
 }
