@@ -20,7 +20,7 @@ export class DataserviceService {
       this.d.latestReviewDate = data.latestReviewDate;
       this.d.name = data.name;
       this.d.price = data.price;
-      this.d.product_id = data.price;
+      this.d.product_id = data.product_id;
       this.d.reviewCount = data.reviewCount;
       this.d.sourceCategory = data.sourceCategory;
       this.d.title = data.title;
